@@ -10,10 +10,20 @@ import colorama
 from colorama import Fore, init, Back, Style
 from datetime import date
 
-os.system("cls")
 os.system("title [STEAM] ID Generator - Matty#8952")
+def Spinner():
+	l = ['|', '/', '-', '\\']
+	for i in l+l+l:
+		sys.stdout.write('\r' + '[*] Loading... '+i)
+		sys.stdout.flush()
+		time.sleep(0.2)
+
+Spinner()
+os.system("cls")
 count = 0
 current_path = os.path.dirname(os.path.realpath(__file__))
+if not os.path.exists("Generated IDs"):
+    os.makedirs("Generated IDs/")
 
 banner = (Style.BRIGHT + Fore.WHITE + Back.BLACK +"                         ["+Style.BRIGHT + Fore.BLUE + Back.BLACK +"+"+Style.BRIGHT + Fore.WHITE + Back.BLACK +"]"+ Style.BRIGHT + Fore.BLUE + Back.BLACK +"-------------------------------------------------------"+ Style.BRIGHT + Fore.WHITE + Back.BLACK +"["+ Style.BRIGHT + Fore.BLUE + Back.BLACK +"+"+ Style.BRIGHT + Fore.WHITE + Back.BLACK +"]\n"+ 
 Style.BRIGHT + Fore.BLUE + Back.BLACK +'''\n                           ░██████╗████████╗███████╗░█████╗░███╗░░░███╗  ██╗██████╗░
@@ -43,7 +53,7 @@ if opcion =='1':
 	cantidad = input("\nHow many steam ID's: \n")
 	while int(count)<int(cantidad):
 		Generated = random.choice(string.ascii_uppercase).upper()+''.join(random.choice(string.ascii_uppercase + string.digits).upper() for _ in range(2))
-		f= open(current_path+"/"+str("Generated")+str("")+".txt","a")
+		f= open("Generated IDs"+"/"+str("Generated")+str("")+".txt","a")
 		f.write(Generated+"\n")
 		print(Style.BRIGHT + Fore.BLUE + Back.BLACK +"Generated ID: "+ Fore.RESET + Generated)
 		count+=1
