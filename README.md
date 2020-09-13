@@ -1,5 +1,5 @@
 # Steam-ID-Generator
-Simple Steam 3digit ID generator
+Simple Steam ID generator
 
 # Use:
 Open CMD in folder & write "pip install -r requirements.txt"
