@@ -2,9 +2,9 @@
 Simple Steam ID generator
 
 # Use:
-Open CMD in folder & write "pip install -r requirements.txt"
-Via CMD: "python IDCracker.py"
-Or just execute it.
+1) Open CMD in folder & write "pip install -r requirements.txt"
+2) Via CMD: "python IDCracker.py" Or just execute it.
+
 The use is very easy.
 
 Discord: Matty#8952
