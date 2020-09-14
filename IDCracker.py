@@ -1,4 +1,4 @@
-#Steam 3Digit ID Generator
+#Steam ID Generator
 #Made by: Matty#8952
 #Github: MattyTM
 #Discord server: https://discord.gg/CJWW7DW
@@ -61,9 +61,7 @@ if opcion =='1':
 		f.write(Generated+"\n")
 		print(Style.BRIGHT + Fore.BLUE + Back.BLACK +"Generated ID: "+ Fore.RESET + Generated)
 		count+=1
-pass
 
-if int(count)==int(cantidad):
 	print("\n" + Style.BRIGHT + Fore.CYAN + Back.BLACK +"Id's have been generated successfully!")
 	print(Style.BRIGHT + Fore.BLUE + Back.BLACK +"Generated ID's saved in Generated.txt")
 	input(Style.BRIGHT + Fore.RED + Back.BLACK +"\nPress enter to exit")
