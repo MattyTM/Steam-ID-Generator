@@ -1,7 +1,7 @@
 #Steam ID Generator
 #Made by: Matty#8952
 #Github: MattyTM
-#Discord server: https://discord.gg/CJWW7DW
+#Discord server: https://discord.gg/UgJhHu7
 import random
 import string
 import pathlib
