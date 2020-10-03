@@ -8,3 +8,4 @@ Simple Steam ID generator
 The use is very easy.
 
 Discord: Matty#8952
+server: https://discord.gg/UgJhHu7
